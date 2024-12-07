@@ -1,64 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C0zyK1tty minecraft mods</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#mods">Mods</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h1>Welcome to C0zyK1tty Minecraft Mods</h1>
-        <p>Discover and download the latest Minecraft mods created by C0zyK1tty.</p>
-    </section>
-
-    <section id="mods">
-        <h2>Our Mods</h2>
-        <div class="mod">
-            <h3>Mod 1</h3>
-            <p>Description of Mod 1.</p>
-        </div>
-        <div class="mod">
-            <h3>Mod 2</h3>
-            <p>Description of Mod 2.</p>
-        </div>
-        <!-- Add more mods as needed -->
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Learn more about C0zyK1tty and our journey in creating Minecraft mods.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 C0zyK1tty Minecraft Mods. All rights reserved.</p>
-    </footer>
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -70,64 +15,73 @@
             background-color: #333;
             color: #fff;
             padding: 1rem 0;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            padding: 2rem;
             text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
         }
         .mod {
             background-color: #fff;
-            margin: 1rem 0;
             padding: 1rem;
+            margin-bottom: 1rem;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .mod h2 {
+            margin-top: 0;
         }
-        form label {
-            margin: 0.5rem 0;
+        .mod p {
+            margin-bottom: 0.5rem;
         }
-        form input, form textarea {
-            width: 100%;
-            max-width: 400px;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .mod img {
+            float: left;
+            margin-right: 1rem;
+            border-radius: 10%;
+            height: 120px;
+            width: 120px;
         }
-        form button {
+        .download-button {
+            display: inline-block;
             padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            background-color: #555;
+            color: #fff;
             border: none;
             border-radius: 5px;
-            background-color: #333;
-            color: #fff;
-            cursor: pointer;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .download-button:hover {
+            background-color: #aaa;
         }
     </style>
+</head>
+<body>
+    <header>
+        <h1>C0zyK1tty minecraft mods</h1>
+    </header>
+    <div class="container">
+        <div class="mod">
+            <img src="https://dummyimage.com/500/000/fff&text=test" class="mods">
+            <h2>Mod Name 1</h2>
+            <p>Description of the mod.</p>
+            <button id="mod1" class="download-button" type="button">Download</button>
+        </div>
+        <div class="mod">
+            <img src="https://dummyimage.com/500/000/fff&text=test" class="mods">
+            <h2>Mod Name 2</h2>
+            <p>Description of the mod.</p>
+            <button id="mod2" class="download-button" type="button">Download</button>
+        </div>
+        <div class="mod">
+            <img src="https://dummyimage.com/500/000/fff&text=test" class="mods">
+            <h2>Mod Name 3</h2>
+            <p>Description of the mod.</p>
+            <button id="mod3" class="download-button" type="button">Download</button>
+        </div>
+    </div>
 </body>
 </html>
